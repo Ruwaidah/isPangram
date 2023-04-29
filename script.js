@@ -10,9 +10,17 @@
 //   return false;
 // }
 
+// function isPangram(sentence) {
+//   for (let char of "abcdefghijklmnopqrstuvwxyz")
+//     if (sentence.toLowerCase().indexOf(char) === -1) {
+//       return false;
+//     }
+//   return true;
+// }
+
 function isPangram(sentence) {
   for (let char of "abcdefghijklmnopqrstuvwxyz")
-    if (sentence.toLowerCase().indexOf(char) === -1) {
+    if (!sentence.toLowerCase().includes(char)) {
       return false;
     }
   return true;
